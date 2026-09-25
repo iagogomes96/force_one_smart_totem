@@ -1,0 +1,32 @@
+{
+  "contact": {
+    "whatsappNumber": "5511992100645",
+    "instagramUrl": "https://www.instagram.com/forceone.security.technology/"
+  },
+  "links": {
+    "nebulabsUrl": "https://nebulabs.dev.br/",
+    "privacyUrl": "/privacidade"
+  },
+  "analytics": {
+    "gtmContainerId": "",
+    "conversionEvent": "generate_lead"
+  },
+  "whatsappMessageTemplate": "Olá! Meu nome é {name}, sou de {city} e conheci o Smart Totem pelo site da Force One. Gostaria de conversar com a equipe para avaliar como a solução pode atender ao meu projeto ({projectType}).",
+  "indicators": [
+    {
+      "value": 1500,
+      "label": "Smart Totens instalados",
+      "description": "Pontos estratégicos de monitoramento\ndistribuídos nas regiões atendidas\npela Force One."
+    },
+    {
+      "value": 3500,
+      "label": "Câmeras em operação",
+      "description": "Mais pontos de visão compondo uma\ninfraestrutura de segurança\nconectada."
+    },
+    {
+      "value": 10000,
+      "label": "Clientes atendidos",
+      "description": "Condomínios, empresas e projetos\nque já utilizam a tecnologia Force One."
+    }
+  ]
+}

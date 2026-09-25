@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.next-stale/
+out/
+force-one-smart-totem-cpanel/
+force-one-smart-totem-cpanel.zip
+.env*
+!.env.example
+test-results/
+playwright-report/
+*.tsbuildinfo
+.qa/
