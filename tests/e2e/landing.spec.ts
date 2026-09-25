@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import siteConfig from '../../config.json';
 test('12 seções, um h1 e nenhum overflow nos viewports da especificação', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/');
@@ -25,6 +26,50 @@ test('12 seções, um h1 e nenhum overflow nos viewports da especificação', as
     ).toBe(true);
   }
 });
+
+test('quebras editoriais preservam os espaços no mobile', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/');
+
+  const ecosystemText = await page.locator('#ecossistema .section-intro .lead').innerText();
+  const appText = await page.locator('#aplicativo .app-access-lead').innerText();
+
+  expect(ecosystemText.replace(/\s+/g, ' ').trim()).toBe(
+    'Quando tecnicamente compatível, homologada e autorizada, uma infraestrutura privada pode contribuir com programas públicos de videomonitoramento e segurança, ampliando a conexão entre cidade, tecnologia e colaboração.',
+  );
+  expect(appText.replace(/\s+/g, ' ').trim()).toBe(
+    'Acompanhe os pontos vinculados ao seu projeto, consulte imagens ao vivo e acesse gravações através do aplicativo disponibilizado pela Force One. Segurança e controle na palma da sua mão.',
+  );
+});
+
+test('totem e todos os cards da seção de produto cabem no mobile', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/');
+
+  const visual = await page.locator('#produto .product-visual').boundingBox();
+  const productImage = await page.locator('#produto .product-image').boundingBox();
+  const lastBenefit = await page.locator('#produto .benefit-5').boundingBox();
+
+  expect(productImage!.y).toBeGreaterThanOrEqual(visual!.y);
+  expect(lastBenefit!.y + lastBenefit!.height).toBeLessThanOrEqual(visual!.y + visual!.height);
+});
+
+test('indicadores começam em zero e contam até os valores configurados', async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 720 });
+  await page.goto('/');
+
+  const counters = page.locator('[data-count]');
+  await expect(counters).toHaveText(['0', '0', '0']);
+
+  await page.locator('.stats').scrollIntoViewIfNeeded();
+  await expect(counters).toHaveText(
+    siteConfig.indicators.map((indicator) => indicator.value.toLocaleString('pt-BR')),
+    { timeout: 6000 },
+  );
+});
+
 test('modal valida, prepara o WhatsApp e devolve o foco', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('dialog')).toHaveCount(0);
@@ -43,7 +88,7 @@ test('modal valida, prepara o WhatsApp e devolve o foco', async ({ page }) => {
   await expect(page.getByText('Mensagem preparada')).toBeVisible();
   await expect(page.getByRole('link', { name: 'Continuar no WhatsApp' })).toHaveAttribute(
     'href',
-    /wa\.me\/5511954499539/,
+    new RegExp(`wa\\.me/${siteConfig.contact.whatsappNumber.replace(/\D/g, '')}`),
   );
   await page.keyboard.press('Escape');
   await expect(page.locator('dialog')).toHaveCount(0);

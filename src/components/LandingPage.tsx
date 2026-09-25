@@ -174,12 +174,10 @@ export default function LandingPage() {
               <Eyebrow>Force One Smart Totem</Eyebrow>
               <h1>
                 Uma câmera monitora
-                <br />
-                um ponto.
+                <br /> um ponto.
                 <em>
                   Uma rede ajuda a
-                  <br />
-                  proteger uma região.
+                  <br /> proteger uma região.
                 </em>
               </h1>
               <p className="lead">
@@ -225,15 +223,12 @@ export default function LandingPage() {
                   <Eyebrow>O ponto cego da segurança</Eyebrow>
                   <h2>
                     Seu sistema
-                    <br />
-                    enxerga <em>até onde?</em>
+                    <br /> enxerga <em>até onde?</em>
                   </h2>
                   <p className="lead">
                     Você monitora o portão.
-                    <br />
-                    Mas o que acontece antes de alguém
-                    <br />
-                    chegar até ele?
+                    <br /> Mas o que acontece antes de alguém
+                    <br /> chegar até ele?
                   </p>
                 </div>
                 <div className="problem-steps">
@@ -302,10 +297,8 @@ export default function LandingPage() {
                   <Eyebrow>Conheça o Force One Smart Totem</Eyebrow>
                   <h2>
                     Um novo ponto
-                    <br />
-                    de inteligência
-                    <br />
-                    <em>para a sua região.</em>
+                    <br /> de inteligência
+                    <br /> <em>para a sua região.</em>
                   </h2>
                   <p className="lead">
                     Monitoramento em alta definição, conectividade,
@@ -383,8 +376,7 @@ export default function LandingPage() {
               <Eyebrow>Presença que gera confiança</Eyebrow>
               <h2>
                 Uma rede que
-                <br />
-                <em>já está nas ruas.</em>
+                <br /> <em>já está nas ruas.</em>
               </h2>
               <p className="lead">
                 Cada instalação amplia a presença da Force One
@@ -397,7 +389,7 @@ export default function LandingPage() {
                 <div className="stat" key={stat.label}>
                   <div className="stat-number">
                     <em>+</em>
-                    <span data-count={stat.value}>{stat.value.toLocaleString('pt-BR')}</span>
+                    <span data-count={stat.value}>0</span>
                   </div>
                   <h3>{stat.label}</h3>
                   <p>
@@ -421,15 +413,12 @@ export default function LandingPage() {
                 <Eyebrow>Mais conexão. Mais segurança.</Eyebrow>
                 <h2>
                   E se esses pontos
-                  <br />
-                  pudessem
-                  <br />
-                  <em>trabalhar juntos?</em>
+                  <br /> pudessem
+                  <br /> <em>trabalhar juntos?</em>
                 </h2>
                 <p className="lead">
                   É daí que nasce o conceito de
-                  <br />
-                  <strong>Segurança Colaborativa.</strong>
+                  <br /> <strong>Segurança Colaborativa.</strong>
                 </p>
                 <div className="network-comparison">
                   <figure className="comparison-card comparison-isolated">
@@ -457,7 +446,7 @@ export default function LandingPage() {
                     </div>
                     <figcaption>
                       Juntos, eles ajudam
-                      <br />a proteger uma região.
+                      <br /> a proteger uma região.
                     </figcaption>
                   </figure>
                 </div>
@@ -495,8 +484,7 @@ export default function LandingPage() {
                 </span>
                 <p className="map-note">
                   Uma imagem mostra um momento.
-                  <br />
-                  <strong>Uma rede ajuda a entender um caminho.</strong>
+                  <br /> <strong>Uma rede ajuda a entender um caminho.</strong>
                 </p>
               </div>
               <div className="collaborative-mobile-cta">
@@ -521,20 +509,15 @@ export default function LandingPage() {
                   BASTIAN
                   <span>
                     A inteligência
-                    <br />
-                    por trás da rede.
+                    <br /> por trás da rede.
                   </span>
                 </h2>
                 <p className="lead">
                   Bastian é a camada de tecnologia proprietária
-                  <br />
-                  desenvolvida pela Force One para conectar
-                  <br />
-                  recursos, dispositivos e serviços do ecossistema
-                  <br />
-                  Smart Totem, transformando pontos isolados
-                  <br />
-                  em uma infraestrutura mais inteligente.
+                  <br /> desenvolvida pela Force One para conectar
+                  <br /> recursos, dispositivos e serviços do ecossistema
+                  <br /> Smart Totem, transformando pontos isolados
+                  <br /> em uma infraestrutura mais inteligente.
                 </p>
               </div>
               <div className="bastian-system">
@@ -609,19 +592,15 @@ export default function LandingPage() {
                 <span>Ecossistema público</span>
                 <em>
                   Tecnologia privada preparada
-                  <br />
-                  para colaborar com
-                  <br />
-                  sistemas maiores.
+                  <br /> para colaborar com
+                  <br /> sistemas maiores.
                 </em>
               </h2>
               <p className="lead">
                 Quando tecnicamente compatível, homologada e autorizada,
-                <br />
-                uma infraestrutura privada pode contribuir com programas
-                <br />
-                públicos de videomonitoramento e segurança, ampliando
-                <br />a conexão entre cidade, tecnologia e colaboração.
+                <br /> uma infraestrutura privada pode contribuir com programas
+                <br /> públicos de videomonitoramento e segurança, ampliando
+                <br /> a conexão entre cidade, tecnologia e colaboração.
               </p>
             </div>
             <div className="ecosystem-diagram">
@@ -715,11 +694,10 @@ export default function LandingPage() {
                 <Eyebrow>Tecnologia é importante</Eyebrow>
                 <h2>
                   Mas ela precisa
-                  <br />
-                  funcionar{' '}
+                  <br /> funcionar{' '}
                   <em>
                     onde
-                    <br />a vida acontece.
+                    <br /> a vida acontece.
                   </em>
                 </h2>
                 <p className="lead">
@@ -734,12 +712,9 @@ export default function LandingPage() {
               <div className="applications-showcase">
                 <p>
                   Mais segurança
-                  <br />
-                  para pessoas,
-                  <br />
-                  lugares e conexões
-                  <br />
-                  <em>reais.</em>
+                  <br /> para pessoas,
+                  <br /> lugares e conexões
+                  <br /> <em>reais.</em>
                 </p>
                 <Image
                   src={assetPath('/assets/smart-totem-left.webp')}
@@ -797,18 +772,14 @@ export default function LandingPage() {
                 <Eyebrow>Na rua. Com você.</Eyebrow>
                 <h2 className="app-access-title">
                   O Smart Totem está
-                  <br />
-                  na rua. Mas a informação
-                  <br />
-                  <em>pode estar com você.</em>
+                  <br /> na rua. Mas a informação
+                  <br /> <em>pode estar com você.</em>
                 </h2>
                 <p className="lead app-access-lead">
                   Acompanhe os pontos vinculados ao seu projeto, consulte
-                  <br />
-                  imagens ao vivo e acesse gravações através
-                  <br />
-                  do aplicativo disponibilizado pela Force One. Segurança
-                  <br />e controle na palma da sua mão.
+                  <br /> imagens ao vivo e acesse gravações através
+                  <br /> do aplicativo disponibilizado pela Force One. Segurança
+                  <br /> e controle na palma da sua mão.
                 </p>
                 {cta(undefined, 'app_cta_click')}
               </div>
@@ -861,8 +832,7 @@ export default function LandingPage() {
               <Eyebrow>Antes de decidir, é natural ter perguntas</Eyebrow>
               <h2>
                 Dúvidas que fazem sentido.
-                <br />
-                <em>Respostas que dão clareza.</em>
+                <br /> <em>Respostas que dão clareza.</em>
               </h2>
             </div>
             <div className="faq-layout">
@@ -907,8 +877,7 @@ export default function LandingPage() {
             <div className="inline-cta">
               <p>
                 Segurança eficiente raramente depende de uma única barreira.
-                <br />
-                <strong>Ela é construída em camadas.</strong>
+                <br /> <strong>Ela é construída em camadas.</strong>
               </p>
               {cta('Quero avaliar minha região')}
             </div>
@@ -927,13 +896,11 @@ export default function LandingPage() {
               <Eyebrow>Vamos olhar para a sua região</Eyebrow>
               <h2>
                 Sua região
-                <br />
-                <em>pode ser a próxima.</em>
+                <br /> <em>pode ser a próxima.</em>
               </h2>
               <p className="lead">
                 Uma câmera monitora um ponto.
-                <br />
-                Uma rede ajuda a proteger uma região.
+                <br /> Uma rede ajuda a proteger uma região.
               </p>
               <p>
                 A Force One vai entender o seu cenário e avaliar a aplicação do Smart Totem para a
@@ -959,8 +926,7 @@ export default function LandingPage() {
                 </h2>
                 <p className="lead">
                   Uma câmera monitora um ponto.
-                  <br />
-                  Uma rede ajuda a proteger uma região.
+                  <br /> Uma rede ajuda a proteger uma região.
                 </p>
                 <p className="closing-kicker">Force One Smart Totem</p>
                 <p className="closing-statement">Segurança colaborativa começa pela conexão.</p>

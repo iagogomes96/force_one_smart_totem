@@ -4,6 +4,8 @@ node_modules/
 out/
 force-one-smart-totem-cpanel/
 force-one-smart-totem-cpanel.zip
+force-one-smart-totem-github-pages/
+force-one-smart-totem-github-pages.zip
 .env*
 !.env.example
 test-results/

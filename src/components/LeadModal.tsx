@@ -103,8 +103,7 @@ export function LeadModal({
             <p className="eyebrow">Mensagem preparada</p>
             <h2 id="lead-title">
               O próximo ponto
-              <br />
-              <em>começa com você.</em>
+              <br /> <em>começa com você.</em>
             </h2>
             <p>
               Estamos abrindo o WhatsApp com uma mensagem pronta para você enviar à equipe Force

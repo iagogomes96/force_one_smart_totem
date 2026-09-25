@@ -7290,6 +7290,15 @@ p {
   }
 }
 
+/* A composição mobile do produto precisa crescer com o Totem e os cinco cards. */
+@media (max-width: 767px) {
+  #produto .product-visual {
+    max-height: none;
+    justify-content: flex-start;
+    overflow: visible;
+  }
+}
+
 /* Wireframe 02 — wider desktop framing with the gate outside the copy fade */
 @media (min-width: 768px) {
   .problem-scene .problem-base-image,

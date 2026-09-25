@@ -182,6 +182,7 @@ export function Motion() {
           );
           gsap.utils.toArray<HTMLElement>('[data-count]').forEach((element, index) => {
             const counter = { value: 0 };
+            element.textContent = '0';
             gsap.to(counter, {
               value: Number(element.dataset.count),
               duration: 2.2,
@@ -370,6 +371,12 @@ export function Motion() {
           window.removeEventListener('load', refresh);
           context.revert();
         };
+      });
+
+      media.add('(prefers-reduced-motion: reduce)', () => {
+        gsap.utils.toArray<HTMLElement>('[data-count]').forEach((element) => {
+          element.textContent = Number(element.dataset.count).toLocaleString('pt-BR');
+        });
       });
     };
 
